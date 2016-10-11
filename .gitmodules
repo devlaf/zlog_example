@@ -1,0 +1,3 @@
+[submodule "libs/zlog-master"]
+	path = libs/zlog-master
+	url = https://github.com/HardySimpson/zlog.git
