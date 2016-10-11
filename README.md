@@ -21,3 +21,4 @@ Additional Notes to Self
 ---
 - You'll likely want to add some sort of async write functionality or log batching.
 - Zlog is licensed under LGPL v2.1, which is why we have to link to the dynamic lib after building the zlog dependency.  In lieu of tossing those .so files into the standard places, the makefile drops it into the directory of the zlog_example assembly.  It then sets LD flags during the build to instruct the linker to look in $ORIGIN.
+- The directory for the output file specified in zlog.conf actually has to exist otherwise zlog_init() breaks.
